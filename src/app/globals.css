@@ -1,27 +1,33 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+body::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #5d4fb6;
+  border-radius: 10px 15px;
+}
+body::-webkit-scrollbar-track {
+  background-color: #ececec;
+}
+body::-webkit-scrollbar:vertical {
+  width: 8px;
+}
+::selection {
+  color: #fff;
+  background-color: #f0eb00;
+}
+.MainBanner{
+  background: center / cover no-repeat url("../assets/images/MainBanner.svg") ;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.BackgroundPortfolio{
+  background: center / cover no-repeat url("../assets/images/portfolio-background.svg") ;
+
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.swiper-slide{
+  width:  316px!important;
+  height:436px!important;
 }
