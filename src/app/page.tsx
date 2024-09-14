@@ -2,7 +2,7 @@ import AboutMeSectionD from "@/components/AboutMeSectionD";
 import AboutMeSection from "@/components/AboutMeSection";
 import Banner from "@/components/Banner";
 import WorkExperiencie from "@/components/WorkExperiencie";
-import { PortfolioSection } from "@/components/PortfolioSection";
+import { Portfolio } from "@/components/Portfolio";
 
 export default function Home() {
   return (
@@ -12,7 +12,7 @@ export default function Home() {
       <AboutMeSectionD />
       <WorkExperiencie />
       
-      <PortfolioSection />
+      <Portfolio />
    </>
   );
 }

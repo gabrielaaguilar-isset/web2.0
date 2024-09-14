@@ -86,15 +86,15 @@ export const PortfolioSection = () => {
 
   return (
     <div className="BackgroundPortfolio min-h-[670px] pl-[20px] lg:pl-[100px] 2xl:pl-[150px] pt-[69px] mb-[100px]">
-      <div className="relative flex flex-col lg:flex-row lg:items-center">
+      <div className=" flex flex-col items-center justify-center m-auto w-full">
         <Titles
-          text="Portfolio"
+          text="Portfdolio"
           customClass="text-white sm:w-[45%] lg:w-[35%] mr-4"
         />
 
         <div className="relative mt-12 overflow-hidden">
           <div
-            className="flex gap-[25px] transition-transform duration-500 ease-out"
+            className="flex gap-[25px] max-w-[1420px] transition-transform duration-500 ease-out"
             style={{ transform: `translateX(-${currentIndex * slideWidth}px)` }}
           >
             {works.map(({ title, url, img, type }) => (
@@ -137,7 +137,7 @@ export const PortfolioSection = () => {
             ))}
           </div>
 
-          <div className="flex gap-24 w-full justify-end mt-6 pr-[25px] lg:pr-[100px] 2xl:pr-[150px]">
+          <div className="flex gap-24 w-full justify-center">
             <button
               onClick={prevSlide}
               className={` transform  bg-black text-white p-2 rounded-full z-10 ${

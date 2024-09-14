@@ -5,7 +5,7 @@ body::-webkit-scrollbar {
   -webkit-appearance: none;
 }
 body::-webkit-scrollbar-thumb {
-  background-color: #5d4fb6;
+  background-color: #F0EB00;
   border-radius: 10px 15px;
 }
 body::-webkit-scrollbar-track {
@@ -27,7 +27,10 @@ body::-webkit-scrollbar:vertical {
 
 }
 
-.swiper-slide{
-  width:  316px!important;
-  height:436px!important;
+#sliderHome span.swiper-pagination-bullet {
+  background: #fff!important;
+}
+
+#sliderHome span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: #F2EB21 !important;
 }
