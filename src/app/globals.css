@@ -16,7 +16,7 @@ body::-webkit-scrollbar:vertical {
 }
 ::selection {
   color: #fff;
-  background-color: #f0eb00;
+  background-color: #6B2ADC;
 }
 .MainBanner{
   background: center / cover no-repeat url("../assets/images/MainBanner.svg") ;
@@ -26,6 +26,10 @@ body::-webkit-scrollbar:vertical {
   background: center / cover no-repeat url("../assets/images/portfolio-background.svg") ;
 
 }
+.BackgroundNoise{
+  background: center / cover no-repeat url("../assets/images/backgroundNoise.svg") ;
+
+}
 
 #sliderHome span.swiper-pagination-bullet {
   background: #fff!important;
@@ -33,4 +37,5 @@ body::-webkit-scrollbar:vertical {
 
 #sliderHome span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   background: #F2EB21 !important;
+ 
 }

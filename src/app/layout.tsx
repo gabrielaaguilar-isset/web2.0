@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Syne } from "next/font/google";
 import { Navbar } from "@/components/Navbar";
-
+import Footer from "@/components/Footer";
 
 const syne = Syne({ subsets: ["latin"] });
 export const metadata: Metadata = {
@@ -19,8 +19,10 @@ export default function RootLayout({
   return (
     <html lang="es">
       <body className={`${syne.className} antialiased`}>
-      <Navbar />
-        {children}</body>
+        <Navbar />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }

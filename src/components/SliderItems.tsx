@@ -15,7 +15,7 @@ export const SliderItems = ({ title, url, img, type, description }: Props) => {
         className="bg-white w-[317px] m-auto  flex-auto	 item-width sm:w-[95%]  rounded-[35px] mb-14 "
         key={title}
       >
-        <Image src={img} alt={title} className="w-full" />
+        <Image src={img} alt={title} className="w-full rounded-t-[35px]" />
         <div className="flex justify-between -mt-16 px-[26px] items-center">
           <Link href={url} target="_blank">
             <svg
@@ -48,20 +48,20 @@ export const SliderItems = ({ title, url, img, type, description }: Props) => {
             type="button"
             className="button text-sm text-white bg-black py-[10px] px-[16px] rounded-[35px]"
           >
-            Ver informacion
+            Ver información
           </button>
         </div>
-        <div className="py-8 px-[26px]">
-          <h3 className="semibold text-[20px] text-black">{title}</h3>
+        <div className="pt-9 pb-2 px-[26px]">
+          <Link href={url} className="semibold text-[20px] text-black">{title}</Link> 
         </div>
 
-        <div className="flex py-4 px-[26px] justify-between">
+        <div className="flex pt-4 pb-5  px-[26px] justify-between items-center">
           <h4 className="font-medium text-[14px] text-black">{type}</h4>
 
           <button>
             <svg
-              width="50"
-              height="38"
+              width="40"
+              height="28"
               viewBox="0 0 50 38"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"

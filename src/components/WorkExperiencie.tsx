@@ -1,8 +1,6 @@
 import Titles from "./Titles";
 import { Subtitles } from "./Subtitles";
-import Link from "next/link";
-import arrowRight from "../assets/icons/flecha-con-fondo.svg";
-import Image from "next/image";
+
 
 const works = [
   {
@@ -56,7 +54,7 @@ const WorkExperiencie = () => {
             <h2 className="font-semibold text-[19px] md:text-[24px] leading-[150%] text-white mt-[24px]">
               {worktitle}
             </h2>
-            <h3 className="font-light text-white/60 text-[16px] mt-[36px] ">
+            <h3 className="font-light text-white/60 text-[16px] mt-[36px] lg:text-[18px] ">
               {description}
             </h3>
           </div>

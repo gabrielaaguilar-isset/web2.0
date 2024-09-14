@@ -17,10 +17,57 @@ import adricapon from "../assets/images/adri-capon.svg";
 import mauricorp from "../assets/images/mauricorp.svg";
 import storeMauricorp from "../assets/images/store.mauricor.svg";
 import svgsPortfolio from "../assets/images/svgPortfolio.svg";
+import terracota from "../assets/images/prueba-Terracota.svg";
+import verde from "../assets/images/prueba-verde.svg";
+import crema from "../assets/images/crema.svg"
+import azul from "../assets/images/azulcielo.svg";
+import verdeMenta from "../assets/images/verde-menta.svg";
+
+ 
 import Image from "next/image";
 
 
 const works = [
+  {
+    title: "Dilo club",
+    url: "https://dilo.club/",
+    img: terracota,
+    type: "Wordpress, Elementor",
+    description:
+      "Sitio web desarrollado desde cero con WordPress y Elementor, sin plantillas. Todo el diseño y funcionalidad fueron personalizados para cumplir con las necesidades específicas del proyecto.",
+  },
+  {
+    title: "Dilo club",
+    url: "https://dilo.club/",
+    img: verde,
+    type: "Wordpress, Elementor",
+    description:
+      "Sitio web desarrollado desde cero con WordPress y Elementor, sin plantillas. Todo el diseño y funcionalidad fueron personalizados para cumplir con las necesidades específicas del proyecto.",
+  },
+  {
+    title: "Dilo club",
+    url: "https://dilo.club/",
+    img: crema,
+    type: "Wordpress, Elementor",
+    description:
+      "Sitio web desarrollado desde cero con WordPress y Elementor, sin plantillas. Todo el diseño y funcionalidad fueron personalizados para cumplir con las necesidades específicas del proyecto.",
+  },
+  {
+    title: "Dilo club",
+    url: "https://dilo.club/",
+    img: azul,
+    type: "Wordpress, Elementor",
+    description:
+      "Sitio web desarrollado desde cero con WordPress y Elementor, sin plantillas. Todo el diseño y funcionalidad fueron personalizados para cumplir con las necesidades específicas del proyecto.",
+  },
+  {
+    title: "Dilo club",
+    url: "https://dilo.club/",
+    img: verdeMenta,
+    type: "Wordpress, Elementor",
+    description:
+      "Sitio web desarrollado desde cero con WordPress y Elementor, sin plantillas. Todo el diseño y funcionalidad fueron personalizados para cumplir con las necesidades específicas del proyecto.",
+  },
   {
     title: "Dilo club",
     url: "https://dilo.club/",
@@ -103,9 +150,9 @@ export const Portfolio = () => {
 
   console.log(sliderPerView);
   return (
-    <div className="BackgroundPortfolio min-h-[670px] w-full flex flex-col sm:px-[50px] px-[20px] lg:px-[100px] 2xl:px-[250px] pt-12 pb-5 m-auto relative mb-[100px]">
-      <Image src={svgsPortfolio} className="absolute top-0 left-0 w-24 sm:w-auto" alt="imagen de decoracion" />
-      <Titles text="Portafolio" customClass="text-white text-center mb-4" />
+    <div className="BackgroundPortfolio min-h-[670px] w-full flex flex-col sm:px-[50px] px-[20px] lg:px-[100px] 2xl:px-[200px] pt-12 pb-5 m-auto relative mb-10">
+      <Image src={svgsPortfolio} className="absolute top-1 left-1 w-24 sm:w-auto" alt="imagen de decoracion" />
+      <Titles text="Portafolio" customClass="text-white text-center mb-0 sm:mb-4" />
 
       <Swiper
         slidesPerView={sliderPerView}
@@ -114,11 +161,11 @@ export const Portfolio = () => {
           clickable: true,
         }}
         modules={[Pagination]}
-        className="w-full m-auto "
+        className="w-full m-auto cursor-grab"
         id="sliderHome"
       >
         {works.map(({ title, url, img, type, description }) => (
-          <SwiperSlide className="w-full">
+          <SwiperSlide className="w-full ">
             <SliderItems
               title={title}
               url={url}
@@ -129,7 +176,7 @@ export const Portfolio = () => {
           </SwiperSlide>
         ))}
       </Swiper>
-      <Image src={svgsPortfolio} className="absolute bottom-0 right-0 w-28 sm:w-auto h-auto" alt="imagen de decoracion" />
+      <Image src={svgsPortfolio} className="absolute bottom-1 right-1 w-28 sm:w-auto h-auto" alt="imagen de decoracion" />
     </div>
   );
 };

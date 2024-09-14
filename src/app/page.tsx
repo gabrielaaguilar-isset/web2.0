@@ -3,6 +3,7 @@ import AboutMeSection from "@/components/AboutMeSection";
 import Banner from "@/components/Banner";
 import WorkExperiencie from "@/components/WorkExperiencie";
 import { Portfolio } from "@/components/Portfolio";
+import FinalSection from "@/components/FinalSection";
 
 export default function Home() {
   return (
@@ -10,9 +11,9 @@ export default function Home() {
       <Banner />
       <AboutMeSection />
       <AboutMeSectionD />
-      <WorkExperiencie />
-      
+      <WorkExperiencie />     
       <Portfolio />
+      <FinalSection />
    </>
   );
 }
