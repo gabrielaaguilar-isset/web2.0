@@ -1,13 +1,18 @@
 "use client";
+
 import { useState } from "react";
+import Image from "next/image";
 import react from "../assets/icons/react.svg";
-import wordpress from "../assets/icons/worpdress.svg";
+import wordpress from "../assets/icons/wordpress.svg";
 import nextJs from "../assets/icons/nextjs.svg";
 import typeScript from "../assets/icons/typescript.svg";
 import tailwind from "../assets/icons/tailwind.svg";
 import mongoDb from "../assets/icons/mongodb.svg";
-import photoshop from "../assets/icons/photoshop.svg";
-import Image from "next/image";
+import photoshop from "../assets/icons/photshop.svg";
+
+import figma from "../assets/icons/figma.svg";
+
+
 
 const logos = [
   { alt: "logo wordpress", url: wordpress },
@@ -15,10 +20,10 @@ const logos = [
   { alt: "logo next js", url: nextJs },
   { alt: "logo typescript", url: typeScript },
   { alt: "logo tailwind", url: tailwind },
+  { alt: "logo figma", url: figma },
   { alt: "logo mongo db", url: mongoDb },
   { alt: "logo photoshop", url: photoshop },
 ];
-
 const services = [
   { servicio: "Paginas Web" },
   { servicio: "Tiendas Virtuales" },
@@ -36,7 +41,7 @@ const AboutMeSection = () => {
   const handleToggle = (section: "skills" | "services" | "certifications") => {
     setOpenSection(openSection === section ? null : section);
   };
-
+ 
   return (
     <div className="mx-6 max-w-[750px] bg-black rounded-[35px] pt-[39px] pb-[45px] px-[18px] -mt-24 sm:m-[15%] sm:-mt-28  lg:hidden mb-[100px]">
       <div
@@ -132,6 +137,9 @@ const AboutMeSection = () => {
                 Udemy
               </li>
             </ul>
+            <button className="bg-black text-white py-3 px-6 rounded-full">
+                Ver todos los certificados
+              </button>
           </div>
         </div>
       </div>

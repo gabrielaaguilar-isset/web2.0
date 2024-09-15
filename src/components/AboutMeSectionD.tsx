@@ -1,14 +1,17 @@
 "use client";
 import { useState } from "react";
 import react from "../assets/icons/react.svg";
-import wordpress from "../assets/icons/worpdress.svg";
+import wordpress from "../assets/icons/wordpress.svg";
 import nextJs from "../assets/icons/nextjs.svg";
 import typeScript from "../assets/icons/typescript.svg";
 import tailwind from "../assets/icons/tailwind.svg";
 import mongoDb from "../assets/icons/mongodb.svg";
-import photoshop from "../assets/icons/photoshop.svg";
+import photoshop from "../assets/icons/photshop.svg";
+ 
+import figma from "../assets/icons/figma.svg";
 import Image from "next/image";
 import arrowRight from "../assets/icons/arrow-right.svg";
+
 
 const logos = [
   { alt: "logo wordpress", url: wordpress },
@@ -16,6 +19,7 @@ const logos = [
   { alt: "logo next js", url: nextJs },
   { alt: "logo typescript", url: typeScript },
   { alt: "logo tailwind", url: tailwind },
+  { alt: "logo figma", url: figma },
   { alt: "logo mongo db", url: mongoDb },
   { alt: "logo photoshop", url: photoshop },
 ];

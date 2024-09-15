@@ -30,7 +30,14 @@ body::-webkit-scrollbar:vertical {
   background: center / cover no-repeat url("../assets/images/backgroundNoise.svg") ;
 
 }
+.backgroundAboutMe{
+  background: center / cover no-repeat url("../assets/images/backgroundAboutMe.svg") ;
 
+}
+.backgroundNoiseLargo{
+  background: center / cover no-repeat url("../assets/images/Background-Noise.svg") ;
+
+}
 #sliderHome span.swiper-pagination-bullet {
   background: #fff!important;
 }

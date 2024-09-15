@@ -150,7 +150,7 @@ export const Portfolio = () => {
 
   console.log(sliderPerView);
   return (
-    <div className="BackgroundPortfolio min-h-[670px] w-full flex flex-col sm:px-[50px] px-[20px] lg:px-[100px] 2xl:px-[200px] pt-12 pb-5 m-auto relative mb-10">
+    <div className="BackgroundPortfolio min-h-[670px] w-full flex flex-col sm:px-[50px] px-[20px] lg:px-[100px] 2xl:px-[200px] pt-12 pb-5 m-auto relative mb-10" id="portfolio">
       <Image src={svgsPortfolio} className="absolute top-1 left-1 w-24 sm:w-auto" alt="imagen de decoracion" />
       <Titles text="Portafolio" customClass="text-white text-center mb-0 sm:mb-4" />
 
