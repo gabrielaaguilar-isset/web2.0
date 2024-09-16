@@ -1,6 +1,10 @@
 import Titles from "./Titles";
 import { Subtitles } from "./Subtitles";
+import ButtonAboutMe from "./ButtonAboutMe";
 
+
+
+ 
 
 const works = [
   {
@@ -27,6 +31,7 @@ const works = [
 ];
 
 const WorkExperiencie = () => {
+
   return (
     <div className="mb-[100px] mx-[20px] lg:px-[100px] 2xl:px-[150px] ">
       <div className=" flex flex-col lg:flex-row    lg:gap-44 lg:justify-between ">
@@ -38,10 +43,7 @@ const WorkExperiencie = () => {
             text="Para conocer más sobre las habilidades y la experiencia que hacen posible estos resultados, te invito a explorar la página Sobre mí. Allí podrás descubrir en detalle mi trayectoria profesional, las tecnologías que domino y cómo cada proyecto refleja mi compromiso con la excelencia."
             customClass="leading-[171%] text-black mt-2 lg:max-w-[838px]"
           />
-
-          <button className="bg-black text-white py-[16px] px-[42px] rounded-[35px] mt-8 ">
-            Sobre mi
-          </button>
+          <ButtonAboutMe />
         </div>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 2xl:gap-12 mt-24  ">
