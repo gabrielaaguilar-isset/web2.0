@@ -12,7 +12,7 @@ interface Props{
 
 const CertificadosItems = ({name, company, id_credencial, url, type, img }:Props) => {
   return (
-    <div className="flex flex-col justify-center bg-white px-6 pt-4 pb-10 rounded-[35px] w-full mx-auto min-h-[200px] ">
+    <div className="flex flex-col justify-center bg-white shadow-lg px-6 pt-4 pb-10 rounded-[35px] w-full mx-auto min-h-[200px] ">
         <div className="flex justify-end mb-4">
         <Image src={img} alt={name} className="w-8" />
         </div>
