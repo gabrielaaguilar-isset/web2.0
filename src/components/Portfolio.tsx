@@ -1,9 +1,6 @@
 "use client";
+
 import { useEffect, useState } from "react";
-
-import { SliderItems } from "./SliderItems";
-
-// Import Swiper styles
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -18,12 +15,23 @@ import mauricorp from "../assets/images/mauricorp.svg";
 import storeMauricorp from "../assets/images/store.mauricor.svg";
 import svgsPortfolio from "../assets/images/svgPortfolio.svg";
 
- 
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
+import ModalPortfolio from "./ModalPortfolio";
+import { SliderItems } from "./SliderItems";
+
+// Define the Work interface
+interface Work {
+  title: string;
+  url: string;
+  img: StaticImageData; // Use StaticImageData for images imported with Next.js
+  type: string;
+  description: string;
+}
+
+
 
 
 const works = [
-  
   {
     title: "Dilo club",
     url: "https://dilo.club/",
@@ -77,10 +85,12 @@ const works = [
 export const Portfolio = () => {
   const [spaceBetween, setSpaceBetween] = useState<number>(0);
   const [sliderPerView, setsliderPerView] = useState<number>(1);
-  
+  const [open, setOpen] = useState(false);
+  const [selectedWork, setSelectedWork] = useState<Work | null>(null);
+
+  // Handle responsive slider behavior
   const handleResize = () => {
     const width = window.innerWidth;
-
     if (width > 1540) {
       setsliderPerView(4);
       setSpaceBetween(18);
@@ -104,35 +114,65 @@ export const Portfolio = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  console.log(sliderPerView);
+  // Modal open/close handlers
+ 
+  const openModal = (work: Work) => {
+    setSelectedWork(work);
+    setOpen(true);
+  };
+
+  const closeModal = () => {
+    setOpen(false);
+    setSelectedWork(null);
+  };
+
   return (
-    <div className="BackgroundPortfolio min-h-[670px] w-full flex flex-col sm:px-[50px] px-[20px] lg:px-[100px] 2xl:px-[200px] pt-12 pb-5 m-auto relative mb-10" id="portfolio">
-      <Image src={svgsPortfolio} className="absolute top-1 left-1 w-24 sm:w-auto" alt="imagen de decoracion" />
-      <Titles text="Portafolio" customClass="text-white text-center mb-0 sm:mb-4" />
+    <div
+      className="BackgroundPortfolio min-h-[670px] w-full flex flex-col sm:px-[50px] px-[20px] lg:px-[100px] 2xl:px-[200px] pt-12 pb-5 m-auto relative mb-10"
+      id="portfolio"
+    >
+      <Image
+        src={svgsPortfolio}
+        className="absolute top-1 left-1 w-24 sm:w-auto"
+        alt="imagen de decoracion"
+      />
+      <Titles
+        text="Portafolio"
+        customClass="text-white text-center mb-0 sm:mb-4"
+      />
 
       <Swiper
         slidesPerView={sliderPerView}
         spaceBetween={spaceBetween}
-        pagination={{
-          clickable: true,
-        }}
+        pagination={{ clickable: true }}
         modules={[Pagination]}
         className="w-full m-auto cursor-grab"
         id="sliderHome"
       >
-        {works.map(({ title, url, img, type, description }) => (
-          <SwiperSlide className="w-full ">
-            <SliderItems
-              title={title}
-              url={url}
-              img={img}
-              type={type}
-              description={description}
-            />
+        {works.map((work) => (
+          <SwiperSlide className="w-full" key={work.title}>
+            <SliderItems {...work} work={work} openModal={openModal} />
           </SwiperSlide>
         ))}
       </Swiper>
-      <Image src={svgsPortfolio} className="absolute bottom-1 right-1 w-28 sm:w-auto h-auto" alt="imagen de decoracion" />
+
+      <Image
+        src={svgsPortfolio}
+        className="absolute bottom-1 right-1 w-28 sm:w-auto h-auto"
+        alt="imagen de decoracion"
+      />
+
+      {open && selectedWork && (
+        <ModalPortfolio
+          title={selectedWork.title}
+          url={selectedWork.url}
+          img={selectedWork.img}
+          type={selectedWork.type}
+          description={selectedWork.description}
+          open={open}
+          onClose={closeModal}
+        />
+      )}
     </div>
   );
 };

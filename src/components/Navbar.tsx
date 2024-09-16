@@ -109,7 +109,7 @@ export const Navbar = () => {
             </li>
             <li>
               <Link
-                href="#"
+                href="/assets/files/GabrielaAguilar2024.pdf"
                 className={`block py-2 px-3 ${!isSticky ? "sm:text-white" : "text-black" } rounded hover:bg-purple md:border-0 md:p-0`}
               >
                 Descargar CV

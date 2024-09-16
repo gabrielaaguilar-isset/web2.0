@@ -7,15 +7,14 @@ interface Props {
   img: string;
   type: string;
   description: string;
+  work: any;
+  openModal: (work: any) => void;
 }
-export const SliderItems = ({ title, url, img, type, description }: Props) => {
+
+export const SliderItems = ({ title, url, img, type, description, work, openModal }: Props) => {
   return (
-    <div>
-      <div
-        className="bg-white w-[317px] m-auto  flex-auto	 item-width sm:w-[95%]  rounded-[35px] mb-14 "
-        key={title}
-      >
-        <Image src={img} alt={title} className="w-full rounded-t-[35px]" />
+    <div className="bg-white w-[317px] m-auto  flex-auto	 item-width sm:w-[95%]  rounded-[35px] mb-14 "   key={title} >
+      <Image src={img} alt={title} className="w-full rounded-t-[35px]" />
         <div className="flex justify-between -mt-16 px-[26px] items-center">
           <Link href={url} target="_blank">
             <svg
@@ -47,6 +46,7 @@ export const SliderItems = ({ title, url, img, type, description }: Props) => {
           <button
             type="button"
             className="button text-sm text-white bg-black py-[10px] px-[16px] rounded-[35px]"
+            onClick={() => openModal(work)}
           >
             Ver información
           </button>
@@ -82,7 +82,6 @@ export const SliderItems = ({ title, url, img, type, description }: Props) => {
             </svg>
           </button>
         </div>
-      </div>
     </div>
   );
 };
