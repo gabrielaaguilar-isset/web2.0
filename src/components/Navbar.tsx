@@ -81,7 +81,7 @@ export const Navbar = () => {
           } w-full md:block md:w-auto`}
           id="navbar-default"
         >
-          <ul className={`font-medium flex flex-col p-4 items-center justify-center md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:bg-transparent md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 ${!isSticky ? "bg-white" : ""}`}>
+          <ul className={`font-medium flex flex-col p-4 justify-center md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:bg-transparent md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 ${!isSticky ? "bg-white" : ""}`}>
             <li>
               <Link
                 href="/sobre-mi"

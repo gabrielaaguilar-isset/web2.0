@@ -166,7 +166,7 @@ export const Portfolio = () => {
         <ModalPortfolio
           title={selectedWork.title}
           url={selectedWork.url}
-          img={selectedWork.img}
+        
           type={selectedWork.type}
           description={selectedWork.description}
           open={open}

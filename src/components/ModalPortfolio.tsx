@@ -3,14 +3,13 @@ import Image, { StaticImageData } from "next/image";
 interface Props {
     title: string;
     url: string;
-    img: StaticImageData[];
     type: string;
     description: string;
     open: boolean;
     onClose: () => void;
   }
   
-const ModalPortfolio = ({title, url, img, type, description, open, onClose}: Props) => {
+const ModalPortfolio = ({title, url,  type, description, open, onClose}: Props) => {
 
   
   return (

@@ -54,7 +54,7 @@ const AboutMeSectionD = () => {
                   src={url}
                   key={alt}
                   alt={alt}
-                  className="w-[144px] h-auto"
+                  className="w-28 h-auto"
                 />
               ))}
             </div>
