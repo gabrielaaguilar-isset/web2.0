@@ -17,57 +17,13 @@ import adricapon from "../assets/images/adri-capon.svg";
 import mauricorp from "../assets/images/mauricorp.svg";
 import storeMauricorp from "../assets/images/store.mauricor.svg";
 import svgsPortfolio from "../assets/images/svgPortfolio.svg";
-import terracota from "../assets/images/prueba-Terracota.svg";
-import verde from "../assets/images/prueba-verde.svg";
-import crema from "../assets/images/crema.svg"
-import azul from "../assets/images/azulcielo.svg";
-import verdeMenta from "../assets/images/verde-menta.svg";
 
  
 import Image from "next/image";
 
 
 const works = [
-  {
-    title: "Dilo club",
-    url: "https://dilo.club/",
-    img: terracota,
-    type: "Wordpress, Elementor",
-    description:
-      "Sitio web desarrollado desde cero con WordPress y Elementor, sin plantillas. Todo el diseño y funcionalidad fueron personalizados para cumplir con las necesidades específicas del proyecto.",
-  },
-  {
-    title: "Dilo club",
-    url: "https://dilo.club/",
-    img: verde,
-    type: "Wordpress, Elementor",
-    description:
-      "Sitio web desarrollado desde cero con WordPress y Elementor, sin plantillas. Todo el diseño y funcionalidad fueron personalizados para cumplir con las necesidades específicas del proyecto.",
-  },
-  {
-    title: "Dilo club",
-    url: "https://dilo.club/",
-    img: crema,
-    type: "Wordpress, Elementor",
-    description:
-      "Sitio web desarrollado desde cero con WordPress y Elementor, sin plantillas. Todo el diseño y funcionalidad fueron personalizados para cumplir con las necesidades específicas del proyecto.",
-  },
-  {
-    title: "Dilo club",
-    url: "https://dilo.club/",
-    img: azul,
-    type: "Wordpress, Elementor",
-    description:
-      "Sitio web desarrollado desde cero con WordPress y Elementor, sin plantillas. Todo el diseño y funcionalidad fueron personalizados para cumplir con las necesidades específicas del proyecto.",
-  },
-  {
-    title: "Dilo club",
-    url: "https://dilo.club/",
-    img: verdeMenta,
-    type: "Wordpress, Elementor",
-    description:
-      "Sitio web desarrollado desde cero con WordPress y Elementor, sin plantillas. Todo el diseño y funcionalidad fueron personalizados para cumplir con las necesidades específicas del proyecto.",
-  },
+  
   {
     title: "Dilo club",
     url: "https://dilo.club/",
