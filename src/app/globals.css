@@ -46,3 +46,11 @@ body::-webkit-scrollbar:vertical {
   background: #F2EB21 !important;
  
 }
+#sliderAboutMe span.swiper-pagination-bullet {
+  background: #000!important;
+}
+
+#sliderAboutMe span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: #F2EB21 !important;
+ 
+}

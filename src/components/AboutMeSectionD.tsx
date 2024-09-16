@@ -11,6 +11,7 @@ import photoshop from "../assets/icons/photshop.svg";
 import figma from "../assets/icons/figma.svg";
 import Image from "next/image";
 import arrowRight from "../assets/icons/arrow-right.svg";
+import Link from "next/link";
 
 
 const logos = [
@@ -108,9 +109,9 @@ const AboutMeSectionD = () => {
               </ul>
             </div>
             <div className="flex h-full justify-end items-end ">
-              <button className="bg-black text-white py-3 px-6 rounded-full">
+              <Link href="/sobre-mi" className="bg-black text-white py-3 px-6 rounded-full">
                 Ver todos los certificados
-              </button>
+              </Link>
             </div>
           </>
         );

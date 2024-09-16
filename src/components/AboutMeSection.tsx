@@ -11,6 +11,7 @@ import mongoDb from "../assets/icons/mongodb.svg";
 import photoshop from "../assets/icons/photshop.svg";
 
 import figma from "../assets/icons/figma.svg";
+import Link from "next/link";
 
 
 
@@ -137,9 +138,9 @@ const AboutMeSection = () => {
                 Udemy
               </li>
             </ul>
-            <button className="bg-black text-white py-3 px-6 rounded-full">
+            <Link href="/sobre-mi" className="bg-black text-white py-3 px-6 rounded-full">
                 Ver todos los certificados
-              </button>
+              </Link>
           </div>
         </div>
       </div>

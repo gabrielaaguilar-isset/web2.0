@@ -57,7 +57,7 @@ export const SliderItems = ({ title, url, img, type, description }: Props) => {
 
         <div className="flex pt-4 pb-5  px-[26px] justify-between items-center">
           <h4 className="font-medium text-[14px] text-black">{type}</h4>
-
+ 
           <button>
             <svg
               width="40"
