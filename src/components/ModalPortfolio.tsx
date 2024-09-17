@@ -1,4 +1,5 @@
 import Image, { StaticImageData } from "next/image";
+import Link from "next/link";
 
 interface Props {
     title: string;
@@ -46,7 +47,7 @@ const ModalPortfolio = ({title, url,  type, description, open, onClose}: Props) 
           <span className="sr-only">Cerrar Modal </span>
         </button>
     <div
-      className={`relative bg-black rounded-[35px] shadow-lg max-w-[95%] 2xl:max-w-[75%] w-full transform transition-transform overflow-y-auto lg:max-h-[850px] max-h-[650px] ${
+      className={`relative bg-black rounded-[35px] shadow-lg max-w-[95%] sm:max-w-[85%] 2xl:max-w-[55%] w-full transform transition-transform overflow-y-auto lg:max-h-[850px] max-h-[650px] ${
         open ? "scale-100 opacity-100" : "scale-110 opacity-0"
       }`}
       onClick={(e) => e.stopPropagation()} // Prevenir el cierre al hacer clic dentro del modal
@@ -71,7 +72,7 @@ const ModalPortfolio = ({title, url,  type, description, open, onClose}: Props) 
   
         </p>
         <div className="flex gap-4">
-          <button className="py-2.5 px-6 border text-black bg-white border-white  rounded-[35px] text-[15px] lg:text-[17px] ">Ver pagina</button>
+          <Link href={url} target="_blank" className="py-2.5 px-6 border text-black bg-white border-white  rounded-[35px] text-[15px] lg:text-[17px] ">Ver pagina</Link>
           <button className="py-2.5 px-6 border text-black bg-white border-white  rounded-[35px] text-[15px] lg:text-[17px] ">Ver Mockup</button>
 
         </div>

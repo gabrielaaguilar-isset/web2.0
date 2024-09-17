@@ -9,7 +9,7 @@ const ButtonAboutMe = () => {
       {pathname !== "/sobre-mi" && (
         <button className="bg-black text-white py-[16px] px-[42px] rounded-[35px] mt-8 ">
           <Link href="/sobre-mi" >
-          Sobre mi
+          Sobre mí
 
           </Link>
         </button>
