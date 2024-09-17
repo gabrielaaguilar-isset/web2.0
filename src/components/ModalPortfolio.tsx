@@ -73,7 +73,7 @@ const ModalPortfolio = ({title, url,  type, description, open, onClose}: Props) 
         </p>
         <div className="flex gap-4">
           <Link href={url} target="_blank" className="py-2.5 px-6 border text-black bg-white border-white  rounded-[35px] text-[15px] lg:text-[17px] ">Ver pagina</Link>
-          <button className="py-2.5 px-6 border text-black bg-white border-white  rounded-[35px] text-[15px] lg:text-[17px] ">Ver Mockup</button>
+          {/* <button className="py-2.5 px-6 border text-black bg-white border-white  rounded-[35px] text-[15px] lg:text-[17px] ">Ver Mockup</button> */}
 
         </div>
 

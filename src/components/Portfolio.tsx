@@ -74,7 +74,7 @@ const works = [
   },
   {
     title: "Store Mauricorp",
-    url: "https://mauricorp.com/",
+    url: "https://store.mauricorp.com/",
     img: storeMauricorp,
     type: "Wordpress, Elementor",
     description:
