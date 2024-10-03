@@ -40,7 +40,7 @@ export const Navbar = () => {
         isSticky ? "bg-white bg-opacity-90 backdrop-blur-md" : "bg-transparent"
       } ${showHeader || isOpen ? "translate-y-0" : "-translate-y-full"}`}
     >
-      <div className="px-[20px] lg:px-[100px] 2xl:px-[150px] flex flex-wrap items-center justify-between mx-auto p-4">
+      <div className="px-[20px] lg:px-[100px] 2xl:px-[150px] flex flex-wrap items-center justify-between mx-auto p-4 max-w-[1920px]">
         <Link
           href="/"
           className="flex items-center space-x-3 rtl:space-x-reverse"

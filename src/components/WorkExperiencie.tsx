@@ -33,7 +33,7 @@ const works = [
 const WorkExperiencie = () => {
 
   return (
-    <div className="mb-[100px] mx-[20px] lg:px-[100px] 2xl:px-[150px] ">
+    <div className="mb-[100px] mx-[20px] lg:px-[100px] 2xl:px-[150px] max-w-[1920px] 2xl:mx-auto">
       <div className=" flex flex-col lg:flex-row    lg:gap-44 lg:justify-between ">
         <div className="max-w-[207px] lg:max-w-[277px]">
           <Titles text="Experiencia laboral" customClass="text-left" />

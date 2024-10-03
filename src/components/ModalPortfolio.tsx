@@ -47,7 +47,7 @@ const ModalPortfolio = ({title, url,  type, description, open, onClose}: Props) 
           <span className="sr-only">Cerrar Modal </span>
         </button>
     <div
-      className={`relative bg-black rounded-[35px] shadow-lg max-w-[95%] sm:max-w-[85%] 2xl:max-w-[55%] w-full transform transition-transform overflow-y-auto lg:max-h-[850px] max-h-[650px] ${
+      className={`relative bg-black rounded-[35px] shadow-lg max-w-[95%] sm:max-w-[80%] lg:max-w-[60%] 2xl:max-w-[50%] w-full transform transition-transform overflow-y-auto lg:max-h-[850px] max-h-[650px] ${
         open ? "scale-100 opacity-100" : "scale-110 opacity-0"
       }`}
       onClick={(e) => e.stopPropagation()} // Prevenir el cierre al hacer clic dentro del modal
@@ -60,7 +60,7 @@ const ModalPortfolio = ({title, url,  type, description, open, onClose}: Props) 
             <h3 className="font-semibold text-black text-[17px] z-20">
               {title}
             </h3>
-            <h4 className="font-regular text-black text-[17px] ">{type}</h4>
+            <h4 className="font-regular text-black text-[15px] ">{type}</h4>
           </div>
         </div>
 

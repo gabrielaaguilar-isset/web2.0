@@ -91,6 +91,7 @@ export const Portfolio = () => {
   // Handle responsive slider behavior
   const handleResize = () => {
     const width = window.innerWidth;
+   
     if (width > 1540) {
       setsliderPerView(4);
       setSpaceBetween(18);
@@ -131,6 +132,7 @@ export const Portfolio = () => {
       className="BackgroundPortfolio min-h-[670px] w-full flex flex-col sm:px-[50px] px-[20px] lg:px-[100px] 2xl:px-[200px] pt-12 pb-5 m-auto relative mb-10 "
       id="portfolio"
     >
+
       <Image
         src={svgsPortfolio}
         className="absolute top-1 left-1 w-24 sm:w-auto"
@@ -146,7 +148,7 @@ export const Portfolio = () => {
         spaceBetween={spaceBetween}
         pagination={{ clickable: true }}
         modules={[Pagination]}
-        className="w-full m-auto cursor-grab"
+        className="w-full m-auto cursor-grab max-w-[1900px]"
         id="sliderHome"
       >
         {works.map((work) => (
@@ -156,6 +158,8 @@ export const Portfolio = () => {
         ))}
       </Swiper>
 
+ 
+    
       <Image
         src={svgsPortfolio}
         className="absolute bottom-1 right-1 w-28 sm:w-auto h-auto"

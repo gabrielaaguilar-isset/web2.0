@@ -14,6 +14,7 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar:vertical {
   width: 8px;
 }
+
 ::selection {
   color: #fff;
   background-color: #6B2ADC;
@@ -54,3 +55,17 @@ body::-webkit-scrollbar:vertical {
   background: #F2EB21 !important;
  
 }
+<<<<<<< HEAD
+=======
+
+
+
+@media (width >= 2500px){
+  .marginMS{
+    padding-top: 12em!important;
+  }
+  .paddinArriba{
+    margin-top: 7em;
+  }
+}
+>>>>>>> 433c992611cfeeb185e4d50809121962aeed34d9
