@@ -3,7 +3,7 @@ import imgFinalmobile from "../assets/images/imgFinal.svg";
 import Image from "next/image";
 const FinalSection = () => {
   return (
-    <div className="BackgroundNoise flex flex-col sm:flex-row px-[20px] lg:px-[100px] 2xl:px-[150px] mb-10 items-center py-16">
+    <div className="BackgroundNoise flex flex-col sm:flex-row px-[20px] lg:px-[100px] 2xl:px-[150px] mb-10 items-center py-16 ">
       <Image src={imgFinalmobile} alt="forma decorativa" className=" -mt-10 lg:hidden" />
       <Image src={imgFinalDesk} alt="forma decorativa" className=" -mt-10 hidden lg:block" />
 

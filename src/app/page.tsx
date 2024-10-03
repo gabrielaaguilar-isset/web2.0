@@ -7,13 +7,14 @@ import FinalSection from "@/components/FinalSection";
 
 export default function Home() {
   return (
-   <>
+    <>
+  
       <Banner />
       <AboutMeSection />
       <AboutMeSectionD />
-      <WorkExperiencie />     
+      <WorkExperiencie />
       <Portfolio />
       <FinalSection />
-   </>
+    </>
   );
 }

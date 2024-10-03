@@ -44,7 +44,7 @@ const AboutMeSection = () => {
   };
  
   return (
-    <div className="mx-6 max-w-[750px] bg-black rounded-[35px] pt-[39px] pb-[45px] px-[18px] -mt-24 sm:m-[15%] sm:-mt-28  lg:hidden mb-[100px]">
+    <div className="mx-6 max-w-[750px] bg-black rounded-[35px] pt-[39px] pb-[45px] px-[18px] -mt-24 sm:m-[15%] sm:-mt-28  lg:hidden mb-[100px] ">
       <div
         onClick={() => handleToggle("skills")}
         className={`${openSection === "skills" ? "bg-purple" : "bg-black"} py-[5px] flex justify-between rounded-[35px] pl-[17px] items-center cursor-pointer`}

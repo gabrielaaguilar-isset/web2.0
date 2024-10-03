@@ -85,7 +85,7 @@ export const Navbar = () => {
             <li>
               <Link
                 href="/sobre-mi"
-                className={`block py-2 px-3 ${!isSticky ? "sm:text-white" : "text-black" } text-black rounded hover:bg-purple hover:text-white py-2 px-6 hover:rounded-[35px] md:border-0 `}
+                className={`block py-2 px-3 ${!isSticky ? "sm:text-white" : "text-black" } text-black rounded hover:bg-purple hover:text-white py-2 px-6 hover:rounded-[35px] md:border-0 transition-all duration-300 `}
                 aria-current="page"
               >
                 Sobre mí
@@ -94,23 +94,16 @@ export const Navbar = () => {
             <li>
               <Link
                 href="/#portfolio"
-                className={`block py-2 px-3 ${!isSticky ? "sm:text-white" : "text-black" } rounded hover:bg-purple hover:text-white  py-2  px-6 hover:rounded-[35px]  md:border-0 `}
+                className={`block py-2 px-3 ${!isSticky ? "sm:text-white" : "text-black" } rounded hover:bg-purple hover:text-white  py-2  px-6 hover:rounded-[35px]  md:border-0 transition-all duration-300 `}
               >
                 Portafolio
               </Link>
             </li>
+       
             <li>
               <Link
-                href="#"
-                className={`block py-2 px-3 ${!isSticky ? "sm:text-white" : "text-black" } rounded hover:bg-purple hover:text-white py-2 px-6 hover:rounded-[35px] md:border-0 `}
-              >
-                Inglés
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/GabrielaAguilar2024.pdf"
-                className={`block  ${!isSticky ? "sm:text-white" : "text-white" }  bg-purple hover:bg-black text-white py-2 px-6 rounded-[35px] md:border-0 `} target="_blank"
+                href="/GabrielaAguilar2024-01.pdf"
+                className={`block  ${!isSticky ? "sm:text-white" : "text-white" }  bg-purple hover:bg-black text-white py-2 px-6 rounded-[35px] md:border-0 transition-all duration-300 `} target="_blank"
               >
                 Descargar CV
               </Link>
