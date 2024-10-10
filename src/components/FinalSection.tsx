@@ -9,11 +9,8 @@ const FinalSection = () => {
       <Image src={imgFinalmobile} alt="forma decorativa" className=" -mt-10 lg:hidden" />
       <Image src={imgFinalDesk} alt="forma decorativa" className=" -mt-10 hidden lg:block lg:mr-10" />
 
-      <div className="">
+      <div className="flex flex-col ">
       <h5 className="text-[20px] lg:text-[24px]">Si estás buscando soluciones web innovadoras y personalizadas, estoy aquí para hacer realidad tus ideas. No dudes en escribirme un correo o visitar mi perfil de LinkedIn. ¡Hagamos que tu proyecto sea un éxito! 😊😊</h5>
-      </div>
-     
-      </div>
       <div className="mt-8">
             <Link
               href="https://api.whatsapp.com/send/?phone=573133207188&text&type=phone_number&app_absent=0"
@@ -23,6 +20,10 @@ const FinalSection = () => {
               WhatsApp
             </Link>
           </div>
+      </div>
+     
+      </div>
+     
       </div>
       
   );
